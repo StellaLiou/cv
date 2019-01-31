@@ -5,14 +5,19 @@
 	<title>Self Introduction</title>
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 	<style>
-		body{
+	body{
 			color:#eeb0ac ;
 			background-color:#0a4e52 ;
 		}
 		a {
 			color:#587d75 ;
+		/* text-decoration: none; 去掉裝飾,放在超連結裡就是去掉原本的底線*/
+
+
 		}
 		h3{
 			color:#a7d7c5 ;
@@ -31,21 +36,43 @@
 			width:300px ;
 		}
 		h1{
+			border:solid 10px black;
+			padding-left:50px ; 
 			font-family: 'Amatic SC', cursive;
 			font-size: 100px;
 			color:#a7d7c5 ;
 		}
 		h2{
 			font-family: 'Indie Flower', cursive;
+			font-size:30px ;
+			text-align: center;
 		}
+		li,th,td,#idol{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 5px;
+		}
+		#intro{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#detail{
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
 
 	</style>
 </head>
 <body>
-	<h1 id="designer"><strong>Stella's Personal Website</strong></h1>
-	<h2><em>Stella Liou</em></h2>
-	<table>
+
+	<h1 id="designer"><strong><i class="far fa-smile"></i> Stella's Personal Website</strong></h1>
+	<table id="intro">
+
 	 	<tr>
+	 		<h2><em>- - - - - Stella Liou - - - - -</em></h2>
 	 		<td>
 	 			<img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/50851663_2053375841405069_6789225087355584512_n.jpg?_nc_cat=102&_nc_ht=scontent.fkhh1-1.fna&oh=b3115bd14dd2a7b7e91c76feb7cdea1f&oe=5CC236A7" alt="個人照">
 	 		</td>
@@ -58,90 +85,112 @@
 	            <p>假日空閒的時候會騎單車到處逛,或是邊聽音樂邊看一些小說。</p>
 	            <p>喜歡的小說是懸疑驚悚類的,音樂有時會聽時下流行的英美和中文歌。</p>
 	            <p>音樂類型比較不喜歡RAP太多的,我會有一點煩躁😂</p>
+	            <p>還有還有!!本人哈韓🇰🇷是ASTRO的狂粉AROHA喔//</p>
 	 		</td>
 	 	</tr>
     
     </table>
 <hr>
-	<h3><strong>專長</strong></h3>
-	<ul type = "circle">
-		<li>下廚</li>
-		<li>寫字</li>
-		<li>睡覺</li>
-		<li>吃</li>
-	</ul>
-	<h3><strong>興趣</strong></h3>
-	<table>
 
-		<tr>
-			<th>名稱</th>
-			<th>喜愛度</th>
-		</tr>
-		<tr>
-			<td>睡覺</td>
-			<td>💚💚💚💚💚</td>
-		</tr>
-		<tr>
-			<td>吃東西</td>
-			<td>💚💚💚💚💚</td>
-		</tr>
-		<tr>
-			<td>發呆</td>
-			<td>💚💚💚</td>
-		</tr>
-		<tr>
-			<td>看小說</td>
-			<td>💚💚💚</td>
-		</tr>
-		<tr>
-			<td>彈吉他</td>
-			<td>💚💚💚💚</td>
-		</tr>
-		<tr>
-			<td>逛街</td>
-			<td>💚💚💚💚</td>
-		</tr>
-	</table>
-	<h3><strong>喜歡v.s.還好</strong></h3>
-	<table>
-		<tr>
-			<td>芒果</td>
-		    <td>苦瓜</td>
-		</tr>
-		<tr>
-			<td>黑巧克力</td>
-		    <td>白巧克力</td>
-		</tr>
-		<tr>
-			<td>跳繩</td>
-		    <td>跑步</td>
-		</tr>
-		<tr>
-			<td>鮮奶</td>
-		    <td>咖啡</td>
-		</tr>
-		<tr>
-			<td>海</td>
-		    <td>山</td>
-		</tr>
-		<tr>
-			<td>友情</td>
-		    <td>愛情</td>
-		</tr>
-		<tr>
-			<td>親情</td>
-		    <td>友情</td>
-		</tr>
-	</table>
-	<h3><strong>偶像</strong></h3>
-	<p><em>車銀優我本命</em>💘</p>
-	<p>ASTRO全團都還可以啦><只是車銀優真的是顏值擔當🧡💛💚💙💜</p>
+<div class="row" id="detail">
+    <div class="col-lg-3">
+		<h3><strong>專長</strong></h3>
+	    <ul type = "circle">
+		    <li>下廚</li>
+		    <li>寫字</li>
+		    <li>睡覺</li>
+		    <li>吃</li>
+	    </ul>
+    </div>
+    <div class="col-lg-3">
+	    <h3><strong>興趣</strong></h3>
+	    <table>
+
+			<tr>
+				<th>名稱</th>
+				<th>喜愛度</th>
+			</tr>
+			<tr>
+				<td>睡覺</td>
+				<td>💚💚💚💚💚</td>
+			</tr>
+			<tr>
+				<td>吃東西</td>
+				<td>💚💚💚💚💚</td>
+			</tr>
+			<tr>
+				<td>發呆</td>
+				<td>💚💚💚</td>
+			</tr>
+			<tr>
+				<td>看小說</td>
+				<td>💚💚💚</td>
+			</tr>
+			<tr>
+				<td>彈吉他</td>
+				<td>💚💚💚💚</td>
+			</tr>
+			<tr>
+				<td>逛街</td>
+				<td>💚💚💚💚</td>
+			</tr>
+	</table>	   
+	</div>
+    <div class="col-lg-3">
+	    <h3><strong>喜好</strong></h3>
+	    <table>
+			<tr>
+				<th>喜歡</th>
+				<th>還好</th>
+			</tr>
+			<tr>
+				<td>芒果</td>
+			    <td>苦瓜</td>
+			</tr>
+			<tr>
+				<td>黑巧克力</td>
+			    <td>白巧克力</td>
+			</tr>
+			<tr>
+				<td>跳繩</td>
+			    <td>跑步</td>
+			</tr>
+			<tr>
+				<td>鮮奶</td>
+			    <td>咖啡</td>
+			</tr>
+			<tr>
+				<td>海</td>
+			    <td>山</td>
+			</tr>
+			<tr>
+				<td>友情</td>
+			    <td>愛情</td>
+			</tr>
+			<tr>
+				<td>親情</td>
+			    <td>友情</td>
+			</tr>
+	    </table>	
+    </div>
+    <div class="col-lg-3">
+	    <h3><strong>偶像</strong></h3>
+	    <p id="idol"><em>車銀優我本命</em>💘</p>
+	    <p id="idol">ASTRO全團都還可以啦><</p>
+	    <p>只是車銀優真的顏值擔當🧡💛💚💙💜</p>	
+    </div>
+</div>
+
 <div id="designer">
 	<h3><a href="contact.html">連絡資訊</a></h3>
 	<p>有任何意見歡迎隨時連絡我</p>
 	<p>©2019 StellaLiou個人網站. All rights reserved<br>
    Designed by StellaLiou</p>
-</div>
+</div>	
+	
+	
+	
+
 
 </body>
 </html>
